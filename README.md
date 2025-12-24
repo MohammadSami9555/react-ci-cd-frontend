@@ -75,3 +75,23 @@ npm run build
 
 
 Output will be generated in /build folder
+
+
+
+## 🐞 How to Debug CI Failures
+
+If the CI pipeline fails:
+
+1. Go to GitHub → Actions tab
+2. Click the failed workflow run
+3. Open the failed job and read the error logs
+
+### 🔧 Common issues:
+
+- Missing dependencies → run `npm install`
+- Lint errors → run `npm run lint`
+- Test failing → run `npm test`
+- Build failing → run `npm run build`
+
+### 🧠 Tip
+Try locally before pushing code.
