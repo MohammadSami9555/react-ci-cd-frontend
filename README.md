@@ -1,91 +1,77 @@
-![Frontend CI](https://github.com/MohammadSami9555/react-ci-cd-frontend/actions/workflows/ci.yml/badge.svg)
+![Frontend CI Status](https://github.com/MohammadSami9555/react-ci-cd-frontend/actions/workflows/ci.yml/badge.svg)
+
+# React CI/CD Frontend
+
+A simple React frontend project configured with **GitHub Actions CI pipeline**.  
+Every push and pull request to `main` automatically runs:
+
+- ESLint code quality checks  
+- Jest test cases  
+- Production build
+
+This project is bootstrapped using **Create React App**.
+
+---
+
+## 🚀 Features
+
+- ⚛️ React (Create React App)
+- 🧹 ESLint + Prettier configured
+- 🧪 React Testing Library & Jest tests
+- 🤖 GitHub Actions CI workflow
+- 🏗 Automatic build check on every push
+- 🟢 Status badge auto-updates
+- 🔐 Optional branch protection support
+
+---
+
+## 🛠 Tech Stack
+
+- React
+- JavaScript (ES6+)
+- Jest & React Testing Library
+- ESLint & Prettier
+- GitHub Actions
+
+---
+
+## 🔁 CI/CD Pipeline
+
+The pipeline performs the following steps automatically:
+
+1. Checkout repository
+2. Setup Node environment
+3. Install dependencies with `npm ci`
+4. Run ESLint
+5. Run unit tests
+6. Build production bundle
+
+Workflow file:  
+`.github/workflows/ci.yml`
+
+---
+
+## 🏃‍♂️ How to Run Locally
+
+```bash
+npm install
+npm start
 
 
-
-✨ Project Overview
-
-React app with GitHub Actions CI
-
-Runs lint, tests and build on every push
-
-🚀 CI Features
-
-ESLint check
-
-Jest tests
-
-Production build
-
-Status badge auto-updates
+App will run here:
+👉 http://localhost:3000
 
 
-# Getting Started with Create React App
+🧪 Run Tests
+npm test
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+🧹 Lint the project
+npm run lint
 
-In the project directory, you can run:
 
-### `npm start`
+🏗 Build for production
+npm run build
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Output will be generated in /build folder
