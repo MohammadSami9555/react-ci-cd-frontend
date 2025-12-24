@@ -1,3 +1,24 @@
+![Frontend CI](https://github.com/MohammadSami9555/react-ci-cd-frontend/actions/workflows/ci.yml/badge.svg)
+
+
+
+✨ Project Overview
+
+React app with GitHub Actions CI
+
+Runs lint, tests and build on every push
+
+🚀 CI Features
+
+ESLint check
+
+Jest tests
+
+Production build
+
+Status badge auto-updates
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
